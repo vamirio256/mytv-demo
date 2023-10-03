@@ -1,0 +1,32 @@
+package com.example.mytv_demo.domain.models.home
+
+data class Service(
+    val api_url: String,
+    val cate_id: Any,
+    val cate_node_type: Any,
+    val id: String,
+    val interactive_cate_status: String,
+    val interactive_service_status: String,
+    val keyword: String,
+    val logo: String,
+    val logo_cate: Any,
+    val logo_small_active: String,
+    val logo_small_focus: String,
+    val logo_small_inactive: String,
+    val logo_tv_image: String,
+    val logo_tv_ver2: String,
+    val module_id: String,
+    val param_api: String,
+    val poster_layout: String,
+    val product_plugin: String,
+    val screen_name: String,
+    val service_code: String,
+    val service_id_new: Int,
+    val sort_order: Int,
+    val template_id: String,
+    val title: String,
+    val type_cate: String,
+    val type_group: Int,
+    val type_id: String,
+    val url: String
+)

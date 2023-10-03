@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">mytv_demo</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_channel">Truyền hình</string>
+    <string name="nav_movie">Phim truyện</string>
+    <string name="nav_more">Khác</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

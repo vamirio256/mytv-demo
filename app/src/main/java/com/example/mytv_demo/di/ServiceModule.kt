@@ -15,7 +15,7 @@ object ServiceModule {
 
     @Provides
     @Singleton
-    fun channelApiService(retrofit: Retrofit): BaseApi {
-        return retrofit.create(BaseApi::class.java)
+    fun channelApiService(retrofit: Retrofit): ChannelApi {
+        return retrofit.create(ChannelApi::class.java)
     }
 }

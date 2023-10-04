@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import com.example.mytv_demo.MainActivity
 import com.example.mytv_demo.base.BaseFragment
 import com.example.mytv_demo.databinding.FragmentChannelBinding
+import com.example.mytv_demo.databinding.FragmentLoginBinding
 import com.example.mytv_demo.presentation.adapters.ChannelAdapter
 import com.example.mytv_demo.presentation.viewmodels.ChannelViewModel
 import com.example.mytv_demo.utils.Resource
@@ -27,8 +28,9 @@ class ChannelFragment : BaseFragment() {
         fun newInstance() = ChannelFragment()
     }
 
-    lateinit var channelAdapter: ChannelAdapter
-    lateinit var binding: FragmentChannelBinding
+    private lateinit var channelAdapter: ChannelAdapter
+    private var _binding: FragmentChannelBinding? = null
+    private val binding get() = _binding!!
     val TAG = "ChannelFragment"
 
     private val channelViewModel: ChannelViewModel by viewModels()
@@ -38,7 +40,7 @@ class ChannelFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentChannelBinding.inflate(inflater, container, false)
+        _binding = FragmentChannelBinding.inflate(inflater, container, false)
         return binding.root
     }
 

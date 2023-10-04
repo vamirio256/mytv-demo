@@ -8,7 +8,7 @@ import javax.inject.Inject
 class ChannelRepository @Inject constructor(
     private val channelDatabase: ChannelDatabase,
     private val channelApi: ChannelApi
-) : {
+) {
     suspend fun getAllChannels() = channelApi.getAllChannels(Constants.CHANNEL_PAYLOAD)
 
 //    fun getMovie(){

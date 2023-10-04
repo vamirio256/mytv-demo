@@ -5,4 +5,5 @@ data class APIResponse<T> (
     val message: String,
     val error: ApiError?,
     val data: T,
+    val response: T
 )

@@ -18,7 +18,10 @@ object RepositoryModule {
 
     @Provides
     @Singleton
-    fun provideChannelRepo(api: BaseApi, @ApplicationContext context: Context): ChannelRepository {
-        return ChannelRepository(ChannelDatabase.invoke(context), api as ChannelApi)
+    fun provideChannelRepo(
+        api: ChannelApi,
+        @ApplicationContext context: Context
+    ): ChannelRepository {
+        return ChannelRepository(ChannelDatabase.invoke(context), api)
     }
 }

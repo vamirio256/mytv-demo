@@ -5,22 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.mytv_demo.MainActivity
 import com.example.mytv_demo.R
 import com.example.mytv_demo.presentation.viewmodels.MovieViewModel
+import com.example.mytv_demo.presentation.viewmodels.UserViewModel
 
-class MovieFragment : Fragment() {
+class UserFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MovieFragment()
+        fun newInstance() = UserFragment()
     }
 
-    private lateinit var viewModel: MovieViewModel
+    private lateinit var viewModel: UserViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_movie, container, false)
+        return inflater.inflate(R.layout.fragment_user, container, false)
     }
 }
